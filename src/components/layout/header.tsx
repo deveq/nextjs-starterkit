@@ -1,5 +1,7 @@
 import { SITE_CONFIG } from "@/constants/site"
 import { ThemeToggle } from "@/components/theme/theme-toggle"
+import { Nav } from "@/components/layout/nav"
+import { MobileNav } from "@/components/layout/mobile-nav"
 import { Separator } from "@/components/ui/separator"
 
 export function Header() {
@@ -10,7 +12,11 @@ export function Header() {
           <div className="flex items-center">
             <h1 className="text-lg font-semibold">{SITE_CONFIG.name}</h1>
           </div>
-          <ThemeToggle />
+          <Nav className="hidden md:flex" />
+          <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <MobileNav className="md:hidden" />
+          </div>
         </div>
       </header>
       <Separator />
