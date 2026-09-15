@@ -43,5 +43,5 @@ next-env.d.ts
 # playwright-mcp artifacts
 .playwright-mcp/
 
-# Claude Code local settings
-.claude/
+# Claude Code local settings (로컬 전용)
+.claude/*.local.*
