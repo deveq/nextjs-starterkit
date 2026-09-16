@@ -1,7 +1,7 @@
 ---
 allowed-tools: Bash(git add:*), Bash(git status:*)
 description: git 커밋 생성
-argument-hint: "[message?]"
+argument-hint: [message?]
 ---
 # git:commit 커맨드
 
