@@ -1,6 +1,12 @@
+---
+allowed-tools: Bash(git add:*), Bash(git status:*)
+description: git 커밋 생성
+argument-hint: "[message?]"
+---
 # git:commit 커맨드
 
 사용자가 제공한 커밋 메시지: $ARGUMENTS
+만약 사용자가 제공한 커밋 메시지가 없다면 아래의 절차에 따라 분석 후 적절한 커밋 메시지를 지정한다.
 
 ## 절차
 
