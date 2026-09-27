@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 export function CounterExample() {
-  const { count, increment, decrement, reset } = useCounterStore()
+  const { count, increment, incrementBy, decrement, reset } = useCounterStore()
 
   return (
     <Card>
@@ -26,6 +26,9 @@ export function CounterExample() {
           </Button>
           <Button onClick={increment} variant="outline" size="sm">
             +
+          </Button>
+          <Button onClick={() => incrementBy(2)} variant="outline" size="sm">
+            +2
           </Button>
         </div>
       </CardContent>
